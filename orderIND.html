@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+  <html>
+
+   <style type="text/css">.gm-err-container{height:100%;width:100%;display:table;background-color:#e0e0e0;position:relative;left:0;top:0}.gm-err-content{border-radius:1px;padding-top:0;padding-left:10%;padding-right:10%;position:static;vertical-align:middle;display:table-cell}.gm-err-content a{color:#4285f4}.gm-err-icon{text-align:center}.gm-err-title{margin:5px;margin-bottom:20px;color:#616161;font-family:Roboto,Arial,sans-serif;text-align:center;font-size:24px}.gm-err-message{margin:5px;color:#757575;font-family:Roboto,Arial,sans-serif;text-align:center;font-size:12px}.gm-err-autocomplete{padding-left:20px;background-repeat:no-repeat;background-size:15px 15px}
+    </style>
+
+    <style type="text/css">.gm-style .gm-style-mtc label,.gm-style .gm-style-mtc div{font-weight:400}
+    </style>
+
+     <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
+    </style>
+    <style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style>
+    <style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
+    </style>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <style type="text/css">.gm-style {
+        font: 400 11px Roboto, Arial, sans-serif;
+        text-decoration: none;
+      }
+      .gm-style img { max-width: none; }</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/10/onion.js"></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/32/10/controls.js"></script>
+
+<style>
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="/index.html" class="w3-bar-item w3-button w3-blue"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+ 
+<div ng-app="myApp">
+
+<h1> <br> Order Form </h1>
+<hr />
+
+ <!-- hitwebcounter Code START -->
+<p><h4> Number of t.taps donated:</h4></p>
+<a href="http://www.hitwebcounter.com" target="_blank">
+<img src="http://hitwebcounter.com/counter/counter.php?page=6942072&style=0042&nbdigits=5&type=page&initCount=0" title="URL Counter" Alt="URL Counter"   border="0" >
+</a>                                                                         <!-- hitwebcounter.com -->
+<a href="http://www.hitwebcounter.com" title="" target="_blank" style="Roboto,Arial": ; font-size: 12px;">  </a>   
+
+<br><br>
+
+<div ng-controller="r_controller">
+  <table>
+    <h4> See who has purchased t.taps: </h4>
+    <tr ng-repeat="x in names">
+      <td>{{ x.Full_Name }}</td>
+      <td>{{ x.City }}</td>
+    </tr>
+  </table>
+</div> 
+
+<br><br><br>
+
+<div class="w3-section">      
+       <p><h4><i class=" fa fa-shopping-cart w3-text-red w3-xxlarge"></i><b>&nbsp;&nbsp;2</b> t.taps for you </h4></p>
+      </div>
+<div class="w3-section">      
+         <p><h4><i class=" fa fa-tint w3-text-red w3-xxlarge"></i>&nbsp;&nbsp;<b>&nbsp;&nbsp;2</b>&nbsp;t.taps donated</h4></p>
+      </div>
+<div class="w3-section">      
+        <p><i class=" fa fa-usd w3-text-red w3-xxlarge"></i> &nbsp <b> 10</b></p>
+        </div>
+
+<div ng-controller="c_controller">
+  <h2> Your Order Information: <br></h2>
+  <form class="w3-container w3-card-4 w3-padding-16 w3-white">
+    Full Name:<br>
+    <input type="text" class="form-control" ng-model="Full_Name" required><br>
+    Email:<br>
+    <input type="email" class="form-control" ng-model="Email" required><br>
+    Street:<br>
+    <input type="text" class="form-control" ng-model="Street" required><br>
+    City:<br>
+    <input type="text" class="form-control" ng-model="City" required><br>
+    State:<br>
+    <input type="text" class="form-control" ng-model="State" required><br>
+    Zipcode:<br>
+    <input type="number" class="form-control" ng-model="Zipcode" required><br>
+    Credit Card Number:<br>
+    <input type="password" class="form-control" ng-model="CreditCard" required><br>
+    <br><br>
+    <button type="submit" class="w3-button w3-red w3-padding-large" ng-click="save()">Place Order</button>
+    <br><br>
+  </form>
+  <br><br>
+  <p>Order Status:{{results}} <br> Full Name:{{Full_Name}} <br>Email:{{Email}} <br> Street:{{Street}} <br>City:{{City}} <br> State:{{State}} <br>Zipcode:{{Zipcode}} <br> Credit Card Number: {{CreditCard}}</p>
+</div>
+
+</div>
+ 
+<script>
+var app = angular.module('myApp', []);
+app.controller('r_controller', function($scope, $http) {
+   $http.get("mysql/fp1_purchase")
+   .then(function (response) {
+      $scope.names = response.data;
+      // console.log(response.data);
+  });
+});
+
+app.controller('c_controller', function($scope, $http) {
+  $scope.save = function () {
+    $http.post("mysql/fp1_purchase", {"Full_Name": $scope.Full_Name, "Email": $scope.Email,"Street": $scope.Street, "City": $scope.  City, "State": $scope.State, "Zipcode": $scope.Zipcode, "CreditCard": $scope.CreditCard})
+    .then(function (response) {
+        // $scope.added = response.data;
+        $scope.results = response.data;
+        console.log(response.data);
+    });
+  }    
+});
+</script>
+ 
+</body>
+</html>
